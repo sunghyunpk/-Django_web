@@ -4,9 +4,9 @@
             <h1 class="InvestWeb_logo">Investment Web</h1>
         </div>
         <div>
-            <span>nav1</span>
-            <span>nav2</span>
-            <span>nav3</span>
+            <span>Stock</span>
+            <span>Property</span>
+            <span>News</span>
             {% if not user.is_authenticated %}
             <a href="{% url 'accountapp:login' %}?next={{ request.path }}">
                 <span>Login</span>
