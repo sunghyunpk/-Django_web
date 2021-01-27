@@ -10,12 +10,12 @@ from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 
-from accountapp.decorators import account_ownership_requried
+from accountapp.decorators import account_ownership_required
 from accountapp.forms import AccountUpdateForm
 from accountapp.models import HelloWorld
 
 
-has_ownership =[account_ownership_requried, login_required]
+has_ownership =[account_ownership_required, login_required]
 
 @login_required
 def hello_world(request):
