@@ -274,7 +274,7 @@ MagicGrid.prototype.listen = function listen () {
   else { this.getReady(); }
 };
 
-module.exports = MagicGrid;
+//module.exports = MagicGrid;
 
 let magicGrid = new MagicGrid({
   container: '.container',
