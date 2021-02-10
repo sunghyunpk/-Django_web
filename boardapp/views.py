@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
-def board_list(request):
+from .models import Board
 
-    return render(request, 'board_list.html')
+def board_list(request):
+    boardapps = Board.objects.all().order_by('-id')
+    return render(request, 'boardapp/list.html', context={"boardapps":boardapps})

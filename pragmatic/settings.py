@@ -60,9 +60,8 @@ INSTALLED_APPS = [
     'articleapp',
     'commentapp',
     'projectapp',
+    'informapp',
     'boardapp',
-    'introduceapp',
-    'freeapp',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -150,6 +149,8 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
+LOGIN_REDIRECT_URL = reverse_lazy('accountapp:hello_world')
+LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
 
 MEDIA_URL = '/media/'
 
