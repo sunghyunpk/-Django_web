@@ -16,10 +16,12 @@
     margin-top: 2rem 0;
 }
 
-@media screen and (max-width:500px) {
-    html {
-        front-size: 13px;
-    }
+.hsmk_header_nav {
+    margin:0 0.5rem;
+}
+
+.hsmk_header_navbar {
+    margin: 1rem 0;
 }
 
 a {
@@ -31,6 +33,10 @@ a:hover {
     text-decoration: none;
 }
 
-.hsmk_header_nav {
-    margin: 0 0.5rem;
+@media screen and (max-width:500px) {
+    html {
+        front-size: 13px;
+    }
 }
+
+

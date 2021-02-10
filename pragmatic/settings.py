@@ -60,7 +60,9 @@ INSTALLED_APPS = [
     'articleapp',
     'commentapp',
     'projectapp',
-
+    'boardapp',
+    'introduceapp',
+    'freeapp',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -126,9 +128,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -148,8 +150,6 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
-LOGIN_REDIRECT_URL = reverse_lazy('accountapp:hello_world')
-LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
 
 MEDIA_URL = '/media/'
 
