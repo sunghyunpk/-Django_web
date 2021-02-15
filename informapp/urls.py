@@ -1,8 +1,8 @@
 from django.urls import path
-from . import views
+from .views import InformListView
 
-app_name = "boardapp"
+app_name = "informapp"
 
 urlpatterns = [
-    path('list', views.inform_list)
+    path('list/', InformListView.as_view(), name='list'),
 ]

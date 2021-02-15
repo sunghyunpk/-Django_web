@@ -27,6 +27,7 @@ urlpatterns = [
     path('comments/', include('commentapp.urls')),
     path('projects/', include('projectapp.urls')),
     path('informs/', include('informapp.urls')),
-    path('boards/', include('boardapp.urls')),
+    path('boards/', include('board.urls')),
+    path('frees/', include('free.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -61,7 +61,8 @@ INSTALLED_APPS = [
     'commentapp',
     'projectapp',
     'informapp',
-    'boardapp',
+    'board',
+    'free',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
