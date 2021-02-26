@@ -4,6 +4,9 @@ from django.db import models
 
 class Project(models.Model):
     image = models.ImageField(upload_to='project/', null=False)
+    image2 = models.ImageField(upload_to='project/', null=False)
     title = models.CharField(max_length=20, null=False)
     description = models.CharField(max_length=200, null=True)
+    title2 = models.CharField(max_length=20, null=False)
+    description2 = models.CharField(max_length=200, null=True)
     created_at = models.DateTimeField(auto_now=True)

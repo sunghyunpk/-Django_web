@@ -2,17 +2,39 @@
 
 {% block content %}
 
-    <div>
-        <div style="text-align: center; max-width: 500px; margin: 4rem auto;">
-
-            <h2 style="font-family: 'NanumSquareBold'">
-                {{ target_board.title }}
-            </h2>
-            <h5 sytle="margin-bottom: 3rem;">
-                {{ target_board.contents }}
-            </h5>
-
-        </div>
+<div class="row mt-5">
+  <div class="col-12">
+    <div class="form-group">
+      <label for="title">제목</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        value="{{ board.title }}"
+        readonly
+      />
+      <label for="contents">내용</label>
+      <textarea class="form-control" readonly>{{ board.contents }}</textarea>
     </div>
+  </div>
+</div>
+
+<!--<div class="card">-->
+<!--    &lt;!&ndash;제목,분류,작성일&ndash;&gt;-->
+<!--    <div class="card-header">-->
+<!--        <strong>{{ Board.title }}</strong><span>[공지사항]</span>-->
+<!--        <span>{{ Board.registered_date|date:'Y.m.d. H:i' }}</span>-->
+<!--    </div>-->
+<!--    <div class="card-body">-->
+<!--        &lt;!&ndash;내용&ndash;&gt;-->
+<!--        <div>-->
+<!--            {{ Board.contents }}-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--    <button onclick="location.href='/boards/'">목록으로</button>-->
+<!--</div>-->
 
 {% endblock %}

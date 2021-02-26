@@ -18,7 +18,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from informapp.views import InformListView
+
 urlpatterns = [
+    path('', InformListView.as_view(), name='home'),
 
     path('admin/', admin.site.urls),
     path('accounts/', include('accountapp.urls')),
